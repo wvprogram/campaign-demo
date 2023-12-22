@@ -712,6 +712,12 @@ header .nav-mobile .mobile_social-media li a .twitter:hover, header .nav-mobile 
     gap: 1rem;
 }
 
+@media screen and (max-width: 490px) {
+    .contact .form-container form .contact-information {
+        width: 100%;
+    }
+}
+
 .contact .form-container form .contact-information li {
     display: flex;
     flex-direction: column;
