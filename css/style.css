@@ -139,18 +139,18 @@ header .nav-mobile .hamburger:hover {
     cursor: pointer;
 }
 
-header .nav-mobile .hamburger:active .line:nth-child(2) {
+header .nav-mobile .hamburger.is-active .line:nth-child(2) {
     opacity: 0;
 }
 
-header .nav-mobile .hamburger:active .line:nth-child(1) {
+header .nav-mobile .hamburger.is-active .line:nth-child(1) {
     -webkit-transform: translateY(13px) rotate(45deg);
     -ms-transform: translateY(13px) rotate(45deg);
     -o-transform: translateY(13px) rotate(45deg);
     transform: translateY(13px) rotate(45deg);
 }
 
-header .nav-mobile .hamburger:active .line:nth-child(3) {
+header .nav-mobile .hamburger.is-active .line:nth-child(3) {
     -webkit-transform: translateY(-13px) rotate(-45deg);
     -ms-transform: translateY(-13px) rotate(-45deg);
     -o-transform: translateY(-13px) rotate(-45deg);
