@@ -16,7 +16,7 @@
     <!-- Custom Meta -->
     <meta name="description" content="A description of the page">
 
-    <title>Paul Yang for Supreme Court</title>
+    <title>Vote for Paul Yang</title>
 </head>
 <body>
     <header>
@@ -64,88 +64,69 @@
         </div>
     </header>
 
-    <main class="home">
-        <div class="bg-image">
-            <div class="container">
-                <section class="home-content">
-                    <!-- Need Image here -->
-                    <div class="logo-content">
-                        <img src="images/pages/home/logo.png" alt="Paul Yang Logo">
-                        <div class="logo-information">
-                            <h1>Paul Yang</h1>
-                            <p>Minnesota Supreme Court</p>
-                        </div> 
-                    </div>
+    <main class="vote">
+        <div class="container">
+            <section class="vote-content">
+                <div class="vote-title">
+                    <h2><span>Vote Early To Elect Paul Yang</span> You can vote in-person or by mail. Early Voting starts March 10, 2024</h2>
+                </div>
     
-                    <div class="form-container">
-                        <h1>Join Our Campaign</h1>
-                        <form id="campaign" action="#">
-                            <ul>
-                                <li id="formFname">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="fname">
-                                    <!-- <small class="error">First Name is required</small> -->
-                                </li>
-                                <li id="formLname">
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lname">
-                                    <!-- <small class="error">Last Name is required</small> -->
-                                </li>
-                                <li id="formZip">
-                                    <label for="zip">Zip Code</label>
-                                    <input type="text" id="zip" name="zip">
-                                    <!-- <small class="error">Zip Code is required</small> -->
-                                </li>
-                                <li id="formEmail">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email">
-                                    <!-- <small class="error">Email is required</small> -->
-                                </li>
-                            </ul>
-                            <input class="submitButton" type="submit" value="Submit" />
-                        </form>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div>
-            <section class="home-banner">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
+                <div class="vote-mail">
+                    <h3>How to vote by mail:</h3>
+                    
+                    <p><span class="bold-text">Step 1:</span> To request an absentee ballot for 2023 elections, use <a href="#">downloadable application</a> here. Return your completed absentee application to the <a href="#">Ramsey County Elections Office</a> by:</p>
+                    
+                    <ul>
+                        <li>Email: <a href="mailto: email@email.com">paulyang@electon.email.com</a></li>
+                        <li>Mail: PO Box 64098, Saint Paul, MN 55164</li>
+                        <li>Fax: 123-456-7891</li>
+                        <li>In person at the Plato Building (90 Plato Blvd. West, Saint Paul, Minnesota 55107). Building hours are Monday - Friday 8am-4:30pm.</li>
+                    </ul>
     
-                    <div class="mySlides fade">
-                        <img src="images/pages/home/vote-banner.jpg">
-                    </div>
+                    <p><span class="bold-text">Step 2:</span> Vote! Once your ballot arrives in the mail, fill out your ballot completely following the <a href="#">instructions</a> with your ballot.</p>
     
-                    <div class="mySlides fade">
-                        <img src="images/pages/home/vote-banner-v1.jpg">
-                    </div>
+                    <p><span class="bold-text">Step 3:</span> Return your ballot! Mail your completed ballot back in the pre-paid, pre-addressed envelope that was provided. Or you can also drop off your ballot in-person at the <a href="#">Ramsey County Elections Office</a> on <a href="#">Plato Blvd</a>. Remember you can <a href="#">track your ballot</a> once you've mailed it to ensure it's been received and counted!</p>
+                </div>
     
-                    <div class="mySlides fade">
-                        <img src="images/pages/home/vote-banner-v2.jpg">
-                    </div>
+                <hr>
     
-                    <!-- Next and previous buttons -->
-                    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                <div class="vote-in-person">
+                    <h3>How to vote in-person:</h3>
+    
+                    <p>Early voting in person starts <span class="bold-text">March 10, 2024</span>. Voters can cast their ballot in person beginning 46 days before Election Day. </p>
+                    <p>Locations for early voting will be updated as we get closer to Early Voting day.</p>
+                </div>
+    
+                <hr>
+    
+                <div class="vote-election-day">
+                    <h3>Election Day is on Tuesday, March 18th. Be a voter with us. Here's how to vote on Election Day:</h3>
+    
+                    <p><span class="bold-text">Step 1:</span> <a href="#">Find your polling place</a>.</p>
+                    <p><span class="bold-text">Step 2:</span> Check your <a href="#">registration status</a>.</p>
+                    <p><span class="bold-text">Step 3:</span> Know what to bring:</p>
+                    <ul>
+                        <li>Already registered? Just bring yourself!</li>
+                        <li>Not registered? No worries! You can register at the polls. <a href="#">Just bring a photo ID and proof of residency</a>.</li>
+                    </ul>
+                    <p><span class="bold-text">Step 4:</span> Vote! Go to your assigned polling place on Election Day and vote!</p>
+                    <p>Polls open 7am-8pm on Election Day. As long as you are in line by 8pm, you are allowed to vote.</p>
+                </div>
+    
+                <hr>
+    
+                <div class="form-container">
+                    <h3>General Volunteer/Supporter Form</h3>
+    
+                    <?php include('includes/forms/volunteer.html'); ?>
                 </div>
             </section>
-        </div>
-        <div class="container">
-            <section class="home-information">
-                <div class="about">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ipsum laborum voluptatem dolorum dolorem dolores minima consequuntur maiores? Distinctio temporibus ad voluptate numquam harum natus aperiam quam porro praesentium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat assumenda itaque, sint eligendi adipisci iusto incidunt nihil velit nulla inventore sunt repudiandae quo voluptatibus iste omnis maxime corrupti ipsa!</p>
-                    <div class="img-container">
-                        <img src="images/pages/home/image-1.jpg" alt="Paul Yang image 1">
-                    </div>
-                </div>
-                <div class="why">
-                    <h2>Why Me</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo similique impedit vel perferendis tenetur quidem voluptates! Quae animi officia et autem, dolores culpa quod voluptatum laboriosam eius? Praesentium, adipisci ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem doloremque commodi nulla vero obcaecati quis fuga libero, eligendi enim quae molestiae iure? Ipsam explicabo, reiciendis distinctio dolore exercitationem quis quod!</p>
-                    <div class="img-container">
-                        <img src="images/pages/home/image-2.jpg" alt="Paul Yang image 2">
-                    </div>
+    
+            <section class="vote-gallery">
+                <div>
+                    <img src="images\pages\vote\image-one.jpg" alt="Image 1">
+                    <img src="images\pages\vote\image-two.jpg" alt="Image 2">
+                    <img src="images\pages\vote\image-three.jpg" alt="Image 3">
                 </div>
             </section>
         </div>

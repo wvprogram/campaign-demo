@@ -16,7 +16,7 @@
     <!-- Custom Meta -->
     <meta name="description" content="A description of the page">
 
-    <title>Paul Yang for Supreme Court</title>
+    <title>Reach Out to Paul Yang</title>
 </head>
 <body>
     <header>
@@ -64,88 +64,61 @@
         </div>
     </header>
 
-    <main class="home">
-        <div class="bg-image">
-            <div class="container">
-                <section class="home-content">
-                    <!-- Need Image here -->
-                    <div class="logo-content">
-                        <img src="images/pages/home/logo.png" alt="Paul Yang Logo">
-                        <div class="logo-information">
-                            <h1>Paul Yang</h1>
-                            <p>Minnesota Supreme Court</p>
-                        </div> 
-                    </div>
-    
-                    <div class="form-container">
-                        <h1>Join Our Campaign</h1>
-                        <form id="campaign" action="#">
-                            <ul>
-                                <li id="formFname">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="fname">
-                                    <!-- <small class="error">First Name is required</small> -->
-                                </li>
-                                <li id="formLname">
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lname">
-                                    <!-- <small class="error">Last Name is required</small> -->
-                                </li>
-                                <li id="formZip">
-                                    <label for="zip">Zip Code</label>
-                                    <input type="text" id="zip" name="zip">
-                                    <!-- <small class="error">Zip Code is required</small> -->
-                                </li>
-                                <li id="formEmail">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email">
-                                    <!-- <small class="error">Email is required</small> -->
-                                </li>
-                            </ul>
-                            <input class="submitButton" type="submit" value="Submit" />
-                        </form>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div>
-            <section class="home-banner">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-    
-                    <div class="mySlides fade">
-                        <img src="images/pages/home/vote-banner.jpg">
-                    </div>
-    
-                    <div class="mySlides fade">
-                        <img src="images/pages/home/vote-banner-v1.jpg">
-                    </div>
-    
-                    <div class="mySlides fade">
-                        <img src="images/pages/home/vote-banner-v2.jpg">
-                    </div>
-    
-                    <!-- Next and previous buttons -->
-                    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-                </div>
-            </section>
-        </div>
+    <main class="contact">
         <div class="container">
-            <section class="home-information">
-                <div class="about">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ipsum laborum voluptatem dolorum dolorem dolores minima consequuntur maiores? Distinctio temporibus ad voluptate numquam harum natus aperiam quam porro praesentium ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat assumenda itaque, sint eligendi adipisci iusto incidunt nihil velit nulla inventore sunt repudiandae quo voluptatibus iste omnis maxime corrupti ipsa!</p>
-                    <div class="img-container">
-                        <img src="images/pages/home/image-1.jpg" alt="Paul Yang image 1">
-                    </div>
-                </div>
-                <div class="why">
-                    <h2>Why Me</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo similique impedit vel perferendis tenetur quidem voluptates! Quae animi officia et autem, dolores culpa quod voluptatum laboriosam eius? Praesentium, adipisci ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem doloremque commodi nulla vero obcaecati quis fuga libero, eligendi enim quae molestiae iure? Ipsam explicabo, reiciendis distinctio dolore exercitationem quis quod!</p>
-                    <div class="img-container">
-                        <img src="images/pages/home/image-2.jpg" alt="Paul Yang image 2">
-                    </div>
+            <section class="contact-content">
+                <div class="form-container">
+                    <h3>Contact Us</h3>
+    
+                    <form id="campaign" action="#">
+                        <ul class="contact-information">
+                            <li id="formFname">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="fname">
+                                <!-- <small class="error">First Name is required</small> -->
+                            </li>
+                            <li id="formLname">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lname">
+                                <!-- <small class="error">Last Name is required</small> -->
+                            </li>
+                            <li id="formEmail">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                                <!-- <small class="error">Email is required</small> -->
+                            </li>
+                            <li id="formTelephone">
+                                <label for="telephone">Phone</label>
+                                <input type="tel" id="telephone" name="telephone">
+                                <!-- <small class="error">Telephone number is required</small> -->
+                            </li>
+                            <li id="formAddress">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address">
+                                <!-- <small class="error">Full address is required</small> -->
+                            </li>
+                            <li id="formMessage">
+                                <p><label for="message">Message</label></p>
+                                <textarea id="message" name="message" rows="3" cols="50"></textarea>
+                            </li>
+                        </ul>
+                        <ul class="disclosure">
+                            <li>
+                                <input type="checkbox" id="opt-in" name="opt-in" value="opt-in">
+                                <label for="opt-in"> I agree to be contacted by Paul Yang for St. Paul City Supreme Court via call, email, and text. To opt-out, you can reply “stop” at any time or click the unsubscribe link in the emails. Message and data rates may apply.</label>
+                                <!-- <small class="error">Required to opt-in</small> -->
+                            </li>
+                            <li>
+                                <input type="checkbox" id="policy" name="policy" value="policy">
+                                <label for="policy"> By ticking this box I agree that I have read the privacy policy.</label>
+                                <!-- <small class="error">Required to read privacy policy</small> -->
+                            </li>
+                        </ul>
+                    
+                        <input class="submitButton" type="submit" value="Submit" />
+                    
+                        <p>Read our <a href="#">privacy policy</a> for information on how we handle your data and what your rights are.</p>
+                    </form>
                 </div>
             </section>
         </div>

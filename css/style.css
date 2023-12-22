@@ -139,18 +139,18 @@ header .nav-mobile .hamburger:hover {
     cursor: pointer;
 }
 
-header .nav-mobile .hamburger .is-active .line:nth-child(2) {
+header .nav-mobile .hamburger:active .line:nth-child(2) {
     opacity: 0;
 }
 
-header .nav-mobile .hamburger .is-active .line:nth-child(1) {
+header .nav-mobile .hamburger:active .line:nth-child(1) {
     -webkit-transform: translateY(13px) rotate(45deg);
     -ms-transform: translateY(13px) rotate(45deg);
     -o-transform: translateY(13px) rotate(45deg);
     transform: translateY(13px) rotate(45deg);
 }
 
-header .nav-mobile .hamburger .is-active .line:nth-child(3) {
+header .nav-mobile .hamburger:active .line:nth-child(3) {
     -webkit-transform: translateY(-13px) rotate(-45deg);
     -ms-transform: translateY(-13px) rotate(-45deg);
     -o-transform: translateY(-13px) rotate(-45deg);
@@ -479,6 +479,526 @@ header .nav-mobile .mobile_social-media li a .twitter:hover, header .nav-mobile 
         width: 100%;
     }
 }
+
+
+
+
+/**
+ *  vote styling
+ **/
+.vote .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vote .vote-content {
+    width: 60%;
+    padding-top: 10rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .vote .vote-content {
+        width: 100%;
+    }
+}
+
+.vote .bold-text {
+    font-weight: 600;
+}
+
+.vote h2 {
+    font-weight: 700;
+    color: var(--blue-color);
+}
+
+.vote h3 {
+    margin-bottom: 1rem;
+    color: var(--blue-color);
+}
+
+.vote p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.vote a {
+    color: var(--alink-color);
+}
+
+.vote ul {
+    margin-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.vote ul li{
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.vote hr {
+    margin-block: 1rem;
+    color: var(--lightgray-color);
+}
+
+.vote .vote-title {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.vote .vote-title h2 span {
+    text-transform: uppercase;
+}
+
+.vote .vote-mail {
+    margin-bottom: 2rem;
+}
+
+.vote .vote-in-person {
+    margin-block: 2rem;
+}
+
+.vote .vote-election-day {
+    margin-block: 2rem;
+}
+
+.vote .form-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.vote .form-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.vote .form-container h3 {
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+
+.vote .form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.vote .form-container form ul {
+    margin-left: 0;
+}
+
+.vote .form-container form ul li {
+    list-style-type: none;
+}
+
+.vote .form-container form .contact-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.vote .form-container form .contact-information li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.vote .form-container form .contact-information li label {
+    color: var(--blue-color);
+}
+
+.vote .form-container form .contact-information li input {
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.vote .form-container form .contact-information #formFname, .vote .form-container form .contact-information #formLname { width: 49%; }
+.vote .form-container form .contact-information #formAddress, .vote .form-container form .contact-information #formEmail, .vote .form-container form .contact-information #formTelephone { width: 100%; }
+
+@media screen and (max-width: 1362px) {
+    .vote .form-container form .contact-information #formFname, .vote .form-container form .contact-information #formLname { width: 100%; }
+}
+
+.vote .form-container form .monetary-donation li input {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.vote .form-container .submitButton {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.25rem 3rem;
+    border-radius: 10px;
+    border: 0;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.vote .form-container .submitButton:hover, .vote .form-container .submitButton:active, .vote .form-container .submitButton:focus {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.vote .vote-gallery {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.vote .vote-gallery div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.vote .vote-gallery div img {
+    max-width: 374px;
+    width: 100%;
+}
+
+
+
+
+/**
+ *  contact styling
+ **/
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact-content {
+    width: 60%;
+    padding-top: 10rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact .contact-content {
+        width: 100%;
+    }
+}
+
+.contact .form-container {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.contact .form-container h3 {
+    margin-bottom: 1.5rem;
+    color: var(--blue-color);
+}
+
+.contact .form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact .form-container form .contact-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .form-container form .contact-information li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.contact .form-container form .contact-information li label {
+    color: var(--blue-color);
+}
+
+.contact .form-container form .contact-information li input {
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.contact .form-container form .contact-information li textarea {
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.contact .form-container form .contact-information #formFname, .contact .form-container form .contact-information #formLname { width: 49%; }
+.contact .form-container form .contact-information #formAddress, .contact .form-container form .contact-information #formEmail, .contact .form-container form .contact-information #formTelephone, .contact .form-container form .contact-information #formMessage { width: 100%; }
+
+@media screen and (max-width: 1362px) {
+    .contact .form-container form .contact-information #formFname, .contact .form-container form .contact-information #formLname { width: 100%; }
+}
+
+.contact .form-container form .disclosure li {
+    line-height: 1.5rem;
+}
+
+.contact .form-container .submitButton {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.25rem 3rem;
+    border-radius: 10px;
+    border: 0;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.contact .form-container .submitButton:hover, .contact .form-container .submitButton:active, .contact .form-container .submitButton:focus {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/**
+ * volunteer styling
+ **/
+.volunteer .parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.volunteer .parallax h1 {
+    position: absolute;
+    color: var(--white-color);
+    padding-inline: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1300px) {
+    .volunteer .parallax h1 {
+        font-size: 2rem;
+    }
+}
+
+.volunteer .parallax img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .volunteer .parallax img {
+        height: 478px;
+        object-fit: none;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .volunteer .parallax {
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .volunteer .parallax {
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .volunteer .parallax {
+        height: 60vh;
+    }
+}
+
+.volunteer .volunteer-content {
+    position: relative;
+    background: var(--white-color);
+}
+
+.volunteer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.volunteer .volunteer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .volunteer .volunteer-details {
+        width: 100%;
+    }
+}
+
+.volunteer h1 {
+    font-weight: 700;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: var(--blue-color);
+}
+
+@media screen and (max-width: 1300px) {
+    .volunteer h1 {
+        font-size: 2rem;
+    }
+}
+
+.volunteer p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.volunteer .bold-text {
+    font-weight: 700;
+}
+
+.volunteer .uppercase-text {
+    text-transform: uppercase;
+}
+
+.volunteer .center-text {
+    text-align: center;
+}
+
+.volunteer hr {
+    margin-block: 1rem;
+    color: var(--lightgray-color);
+    width: 100%;
+}
+
+.volunteer .image-gallery {
+    margin-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.volunteer .image-gallery img {
+    max-width: 553px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .volunteer .image-gallery{
+        flex-wrap: wrap;
+    }
+}
+
+.volunteer .volunteer-description {
+    margin-block: 2rem;
+}
+
+.volunteer .volunteer-button {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    margin-block: 3rem;
+    text-align: center;
+}
+
+.volunteer .volunteer-button:hover, .volunteer .volunteer-button:active, .volunteer .volunteer-button:focus {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.volunteer .form-container {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.volunteer .form-container h3 {
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+
+.volunteer .form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.volunteer .form-container form ul {
+    margin-left: 0;
+}
+
+.volunteer .form-container form ul li {
+    list-style-type: none;
+}
+
+.volunteer .form-container form .contact-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.volunteer .form-container form .contact-information li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.volunteer .form-container form .contact-information li label {
+    color: var(--blue-color);
+}
+
+.volunteer .form-container form .contact-information li input {
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.volunteer .form-container form .contact-information #formFname, .volunteer .form-container form .contact-information #formLname { width: 49%; }
+.volunteer .form-container form .contact-information #formAddress, .volunteer .form-container form .contact-information #formEmail, .volunteer .form-container form .contact-information #formTelephone { width: 100%; }
+
+@media screen and (max-width: 1362px) {
+    .volunteer .form-container form .contact-information #formFname, .volunteer .form-container form .contact-information #formLname { width: 100%; }
+}
+
+.volunteer .form-container form .monetary-donation li input {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.volunteer .form-container .submitButton {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.25rem 3rem;
+    border-radius: 10px;
+    border: 0;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.volunteer .form-container .submitButton:hover, .volunteer .form-container .submitButton:active, .volunteer .form-container .submitButton:focus {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 
 
